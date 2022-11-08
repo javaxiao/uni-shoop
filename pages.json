@@ -1,47 +1,60 @@
 {
-	"pages": [{
-		"style": {
-		}
-	}    ,{
-            "path" : "pages/home/home",
-            "style" :                                                                                    
-            {
-            }
-            
-        }
-        ,{
-            "path" : "pages/cate/cate",
-            "style" :                                                                                    
-            {
-            }
-            
-        }
-        ,{
-            "path" : "pages/cat/cat",
-            "style" :                                                                                    
-            {
-            }
-            
-        }
-        ,{
-            "path" : "pages/my/my",
-            "style" :{}  
-        }
-    ],
-    // 导航条的文本和样式
-	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "买吧",
-		"navigationBarBackgroundColor": "#C00000",
-		"backgroundColor": "#FFFFFF",
-		"app-plus": {
-			"background": "#efeff4"
-		}
-	},
+  "pages": [{
+    "path": "pages/home/home",
+    "style": {}
+
+  }, {
+    "path": "pages/cate/cate",
+    "style": {}
+
+  }, {
+    "path": "pages/cat/cat",
+    "style": {}
+
+  }, {
+    "path": "pages/my/my",
+    "style": {}
+  }],
+  // 創建分包
+  "subPackages": [
+    {
+        "root": "subpkg",
+        "pages": [
+          
+        {
+                    "path" : "commodity_details/commodity_details",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+    }
+  ],
+  // 导航条的文本和样式
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "买吧",
+    "navigationBarBackgroundColor": "#C00000",
+    "backgroundColor": "#FFFFFF",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  },
   // 配置tabbar节点
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "static/tab_icons/home.png",

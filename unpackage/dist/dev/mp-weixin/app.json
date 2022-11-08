@@ -5,7 +5,15 @@
     "pages/cat/cat",
     "pages/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "commodity_details/commodity_details",
+        "goods_list/goods_list"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "买吧",

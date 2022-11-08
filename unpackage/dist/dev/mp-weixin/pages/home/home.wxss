@@ -1,1 +1,34 @@
-/* pages/home/home.wxss */
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+swiper {
+  height: 330rpx;
+}
+swiper .swiper-item,
+swiper image {
+  width: 100%;
+}
+.nav_list {
+  display: flex;
+  justify-content: space-around;
+  margin: 15rpx 0;
+}
+.nav_list .nav_img {
+  width: 128rpx;
+  height: 140rpx;
+}
+.floor_img {
+  display: flex;
+  width: 100%;
+  height: 60rpx;
+}
+.right_img_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.floor_img_box {
+  display: flex;
+  padding-left: 10rpx;
+}
+
