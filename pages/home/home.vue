@@ -91,7 +91,7 @@
       // 判断类名，跳转到对应的tabbar页面
       if(item.name === '分类') {
         uni.switchTab({
-          url: '/pages/cat/cat'
+          url: '/pages/cart/cart'
         })
       }
     },
