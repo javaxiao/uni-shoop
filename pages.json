@@ -8,7 +8,7 @@
     "style": {}
 
   }, {
-    "path": "pages/cat/cat",
+    "path": "pages/cart/cart",
     "style": {}
 
   }, {
@@ -39,6 +39,24 @@
                 }
                 
                 }
+                ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
             ]
     }
   ],
@@ -61,13 +79,13 @@
         "selectedIconPath": "static/tab_icons/home-active.png"
       },
       {
-        "pagePath": "pages/cat/cat",
+        "pagePath": "pages/cate/cate",
         "text": "分类",
         "iconPath": "static/tab_icons/cate.png",
         "selectedIconPath": "static/tab_icons/cate-active.png"
       },
       {
-        "pagePath": "pages/cate/cate",
+        "pagePath": "pages/cart/cart",
         "text": "购物车",
         "iconPath": "static/tab_icons/cart.png",
         "selectedIconPath": "static/tab_icons/cart-active.png"

@@ -1,5 +1,9 @@
 <template>
   <view>
+    <!-- 搜索栏 -->
+    <view class="search_box">
+      <my-search @click="gotoSearch"></my-search>
+    </view>
     <!-- 渲染轮播图 -->
     <swiper :indicator-dots="true" :autoplay="true" :circular="true" :interval="3000" :duration="1000">
       <!-- 渲染轮播图的每一项 -->
@@ -91,7 +95,7 @@
       // 判断类名，跳转到对应的tabbar页面
       if(item.name === '分类') {
         uni.switchTab({
-          url: '/pages/cat/cat'
+          url: '/pages/cart/cart'
         })
       }
     },
@@ -111,6 +115,13 @@
      })
      // 获取成功
      this.floorList = res.message
+    },
+    
+    // 定义搜索栏跳转方法
+    gotoSearch() {
+      uni.navigateTo({
+        url: '../../subpkg/search/search'
+      })
     }
   }
 }
@@ -153,5 +164,13 @@ swiper {
 .floor_img_box {
   display: flex;
   padding-left: 10rpx;
+}
+
+// 设置搜索栏的样式
+.search_box {
+  // 粘性定位
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 </style>
