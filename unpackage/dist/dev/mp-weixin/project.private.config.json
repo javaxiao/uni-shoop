@@ -3,6 +3,27 @@
   "projectname": "uni-shoop",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": false,
+    "preloadBackgroundData": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/cate/cate",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpkg/goods_list/goods_list",
+          "query": "query=%E6%9C%8D%E9%A5%B0",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

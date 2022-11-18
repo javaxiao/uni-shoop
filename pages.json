@@ -8,7 +8,7 @@
     "style": {}
 
   }, {
-    "path": "pages/cat/cat",
+    "path": "pages/cart/cart",
     "style": {}
 
   }, {
@@ -16,32 +16,46 @@
     "style": {}
   }],
   // 創建分包
-  "subPackages": [
-    {
-        "root": "subpkg",
-        "pages": [
-          
-        {
-                    "path" : "commodity_details/commodity_details",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-                ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-    }
-  ],
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [
+
+      {
+        "path": "commodity_details/commodity_details",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      }, {
+        "path": "goods_list/goods_list",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false,
+          // 下拉触底距离
+           "onReachBottomDistance": 150,
+           // 上拉刷新
+           "enablePullDownRefresh": true,
+           "backgroundColor": "#F8F8F8"
+        }
+
+      }, {
+        "path": "search/search",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      }, {
+        "path": "goods_detail/goods_detail",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      }
+    ]
+  }],
   // 导航条的文本和样式
   "globalStyle": {
     "navigationBarTextStyle": "white",
@@ -61,13 +75,13 @@
         "selectedIconPath": "static/tab_icons/home-active.png"
       },
       {
-        "pagePath": "pages/cat/cat",
+        "pagePath": "pages/cate/cate",
         "text": "分类",
         "iconPath": "static/tab_icons/cate.png",
         "selectedIconPath": "static/tab_icons/cate-active.png"
       },
       {
-        "pagePath": "pages/cate/cate",
+        "pagePath": "pages/cart/cart",
         "text": "购物车",
         "iconPath": "static/tab_icons/cart.png",
         "selectedIconPath": "static/tab_icons/cart-active.png"
