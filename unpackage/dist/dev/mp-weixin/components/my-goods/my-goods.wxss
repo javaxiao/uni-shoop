@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.goods_item {
+  display: flex;
+  padding: 10px 5px;
+  border-bottom: 1px solid #efefef;
+}
+.goods_item .goods_item_left {
+  margin-right: 5px;
+}
+.goods_item .goods_pic {
+  width: 100px;
+  height: 100px;
+}
+.goods_item_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods_item_right .goods_item_title {
+  font-size: 13px;
+}
+.goods_item_right .goods_item_price {
+  font-size: 16px;
+  color: #c00000;
+}
+

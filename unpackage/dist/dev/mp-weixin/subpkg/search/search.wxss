@@ -1,0 +1,43 @@
+.search_box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.sugg_list {
+  padding: 0 5px;
+}
+.sugg_list .sugg_item {
+  font-size: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sugg_list .sugg_item .sugg_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 3px;
+}
+.history_box {
+  padding: 0 5px;
+}
+.history_box .history_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  font-size: 13px;
+  border-bottom: 1px solid #efefef;
+}
+.history_box .history_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.history_box .history_list .uni-tag {
+  margin-right: 5px;
+}
+
